@@ -1,17 +1,19 @@
 const Paw = ({ size = 80, rotate = 0, style = {} }: { size?: number; rotate?: number; style?: React.CSSProperties }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 100 100"
+    viewBox="0 0 100 120"
     width={size}
     height={size}
     style={{ transform: `rotate(${rotate}deg)`, ...style }}
     fill="#1a1a1a"
   >
-    <ellipse cx="22" cy="18" rx="10" ry="12" />
-    <ellipse cx="44" cy="10" rx="9" ry="11" />
-    <ellipse cx="65" cy="13" rx="9" ry="11" />
-    <ellipse cx="80" cy="28" rx="9" ry="11" />
-    <path d="M50 40 C25 38 15 55 20 72 C25 88 40 95 50 95 C60 95 75 88 80 72 C85 55 75 38 50 40Z" />
+    {/* Большая подушечка */}
+    <ellipse cx="50" cy="85" rx="22" ry="18" />
+    {/* Маленькие подушечки-пальцы */}
+    <ellipse cx="22" cy="52" rx="10" ry="13" transform="rotate(-15 22 52)" />
+    <ellipse cx="40" cy="38" rx="10" ry="13" transform="rotate(-5 40 38)" />
+    <ellipse cx="60" cy="38" rx="10" ry="13" transform="rotate(5 60 38)" />
+    <ellipse cx="78" cy="52" rx="10" ry="13" transform="rotate(15 78 52)" />
   </svg>
 );
 
