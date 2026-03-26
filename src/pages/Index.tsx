@@ -1,11 +1,11 @@
-const PAW_URL = "https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/bucket/c8b55409-d44b-40cb-b10e-2a24f92272b6.jpg";
+const PAW_URL = "https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/paw-transparent.png";
 
 const Paw = ({ size = 120, rotate = 0, style = {} }: { size?: number; rotate?: number; style?: React.CSSProperties }) => (
   <img
     src={PAW_URL}
     width={size}
     alt=""
-    style={{ transform: `rotate(${rotate}deg)`, display: "block", mixBlendMode: "multiply", ...style }}
+    style={{ transform: `rotate(${rotate}deg)`, display: "block", ...style }}
   />
 );
 

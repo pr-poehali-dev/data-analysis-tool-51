@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {
+      "name": "Remove background from paw image",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "url": "https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/bucket/026b4973-cb05-44a2-89f5-9e962197f318.jpg"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {"url": "string"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
