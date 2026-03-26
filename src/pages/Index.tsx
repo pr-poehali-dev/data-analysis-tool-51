@@ -5,7 +5,7 @@ const Paw = ({ size = 120, rotate = 0, style = {} }: { size?: number; rotate?: n
     src={PAW_URL}
     width={size}
     alt=""
-    style={{ transform: `rotate(${rotate}deg)`, display: "block", ...style }}
+    style={{ transform: `rotate(${rotate}deg)`, display: "block", mixBlendMode: "multiply", ...style }}
   />
 );
 
@@ -27,11 +27,11 @@ export default function Index() {
 
       <main>
         <section className="hero" style={{ position: "relative" }}>
-          {/* Лапки в углу hero-секции */}
-          <div style={{ position: "absolute", top: 20, right: 20, zIndex: 10, display: "flex", flexDirection: "column", gap: 4, opacity: 0.85 }}>
-            <Paw size={55} rotate={-20} />
-            <Paw size={55} rotate={10} style={{ marginLeft: 40 }} />
-            <Paw size={55} rotate={-15} style={{ marginLeft: 10 }} />
+          {/* Лапки в углу hero-секции — крупные */}
+          <div style={{ position: "absolute", top: 10, right: 10, zIndex: 10, display: "flex", flexDirection: "column", gap: 2 }}>
+            <Paw size={100} rotate={-20} />
+            <Paw size={85} rotate={10} style={{ marginLeft: 50 }} />
+            <Paw size={95} rotate={-15} style={{ marginLeft: 15 }} />
           </div>
           <div className="hero-content">
             <h1 className="hero-title">
@@ -74,11 +74,11 @@ export default function Index() {
         </div>
 
         <section className="section-padding" style={{ position: "relative", overflow: "hidden" }}>
-          {/* Лапки слева от заголовка услуг */}
-          <div style={{ position: "absolute", left: -10, top: 30, opacity: 0.9, display: "flex", flexDirection: "column", gap: 6 }}>
-            <Paw size={60} rotate={40} />
-            <Paw size={60} rotate={20} style={{ marginLeft: 35 }} />
-            <Paw size={60} rotate={40} />
+          {/* Лапки слева — средние */}
+          <div style={{ position: "absolute", left: -15, top: 40, display: "flex", flexDirection: "column", gap: 2 }}>
+            <Paw size={70} rotate={35} />
+            <Paw size={55} rotate={15} style={{ marginLeft: 40 }} />
+            <Paw size={65} rotate={35} />
           </div>
           <div className="section-header">
             <h2 className="section-title">НАШИ УСЛУГИ</h2>
@@ -182,11 +182,11 @@ export default function Index() {
         </section>
 
         <section className="section-padding" style={{ position: "relative", overflow: "hidden" }}>
-          {/* Лапки справа в фото-секции */}
-          <div style={{ position: "absolute", right: -5, bottom: 20, opacity: 0.9, display: "flex", flexDirection: "column", gap: 6 }}>
-            <Paw size={65} rotate={-30} style={{ marginLeft: 30 }} />
-            <Paw size={65} rotate={-10} />
-            <Paw size={65} rotate={-25} style={{ marginLeft: 40 }} />
+          {/* Лапки справа — маленькие */}
+          <div style={{ position: "absolute", right: -10, bottom: 10, display: "flex", flexDirection: "column", gap: 2 }}>
+            <Paw size={45} rotate={-30} style={{ marginLeft: 20 }} />
+            <Paw size={38} rotate={-10} />
+            <Paw size={42} rotate={-25} style={{ marginLeft: 30 }} />
           </div>
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
             @PESIY.PATROL
