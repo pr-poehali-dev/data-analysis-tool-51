@@ -4,77 +4,76 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">ПЁСИЙ*ПАТРУЛЬ</div>
         <nav>
-          <a href="#">Меню</a>
+          <a href="#">Услуги</a>
           <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#">Отзывы</a>
+          <a href="#">Контакты</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <button className="btn-cta">Заказать выгул</button>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              ТВОЙ ПЁС
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              ЗАСЛУЖИВАЕТ <span>ЛУЧШЕГО</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Профессиональный выгул собак во Владивостоке. Бережный уход, свежий морской воздух и море позитива — каждый день для твоего питомца.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
               <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+                Записаться
               </button>
               <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+                Узнать цены
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div className="hero-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/45d85398-1806-4f1d-9530-18003ee37ce2.jpg")` }}>
             <div className="sticker">
-              СВЕЖАК
+              СЧАСТЛИВЫЙ
               <br />
-              КАЖДЫЙ ДЕНЬ
+              ПИТОМЕЦ
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #ВЛАДИВОСТОК
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              ГАВ!
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * ПРОФЕССИОНАЛЬНЫЙ ВЫГУЛ * ЛЮБЯЩИЙ УХОД * ВЛАДИВОСТОК * ЕЖЕДНЕВНО * СВЕЖИЙ ВОЗДУХ * СЧАСТЛИВЫЕ ПСЫ *
+            ПРОФЕССИОНАЛЬНЫЙ ВЫГУЛ * ЛЮБЯЩИЙ УХОД * ВЛАДИВОСТОК * ЕЖЕДНЕВНО * СВЕЖИЙ ВОЗДУХ * СЧАСТЛИВЫЕ ПСЫ
           </div>
         </div>
 
         <section className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">НАШИ УСЛУГИ</h2>
             <a
               href="#"
               className="text-sm md:text-base"
               style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
             >
-              Всё меню
+              Все тарифы
             </a>
           </div>
 
           <div className="menu-grid">
-            {/* Item 1 */}
             <div className="menu-card">
-              <span className="menu-tag">Хит продаж</span>
+              <span className="menu-tag">Хит</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/45d85398-1806-4f1d-9530-18003ee37ce2.jpg"
+                alt="Стандартный выгул"
               />
               <div className="menu-card-body">
                 <div
@@ -85,48 +84,22 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Стандартный</h3>
+                  <span className="price">600 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Прогулка 60 минут в парке или набережной. Одна собака, фотоотчёт в мессенджер.
                 </p>
               </div>
             </div>
 
-            {/* Item 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
-              </span>
-              <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
-              />
-              <div className="menu-card-body">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "10px",
-                  }}
-                >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
-                </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
-              </div>
-            </div>
-
-            {/* Item 3 */}
-            <div className="menu-card">
-              <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
                 Популярное
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/30ff2eb0-43b7-4b69-95de-23448af3fd66.jpg"
+                alt="Групповой выгул"
               />
               <div className="menu-card-body">
                 <div
@@ -137,11 +110,35 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
+                  <h3>Групповой</h3>
+                  <span className="price">400 ₽</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#666" }}>Прогулка с компанией таких же дружелюбных собак. 90 минут социализации и игр.</p>
+              </div>
+            </div>
+
+            <div className="menu-card">
+              <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
+                Премиум
+              </span>
+              <img
+                src="https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/75fbc25f-b9dc-436d-a223-e71eed329f62.jpg"
+                alt="VIP выгул"
+              />
+              <div className="menu-card-body">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <h3>VIP Прогулка</h3>
                   <span className="price">1 200 ₽</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  2 часа, маршрут по выбору, видеоотчёт, лакомство в подарок. Чистка лап после прогулки.
                 </p>
               </div>
             </div>
@@ -150,45 +147,44 @@ export default function Index() {
 
         <section className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">ТВОЙ ПЁС — НАШ ПРИОРИТЕТ.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Мы не просто выгуливаем. Мы заботимся. Каждый выгульщик прошёл обучение и любит собак как своих. Фотоотчёты после каждой прогулки, GPS-трекинг маршрута и полная безопасность — гарантированно.
             </p>
             <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
-              Наша история
+              О команде
             </button>
           </div>
-          <div className="vibe-img"></div>
+          <div className="vibe-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/30ff2eb0-43b7-4b69-95de-23448af3fd66.jpg")`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
         </section>
 
         <section className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            @PESIY.PATROL
           </h2>
           <div className="social-grid">
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
+                src="https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/45d85398-1806-4f1d-9530-18003ee37ce2.jpg"
+                alt="Прогулка 1"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
+                src="https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/75fbc25f-b9dc-436d-a223-e71eed329f62.jpg"
+                alt="Прогулка 2"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
+                src="https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/30ff2eb0-43b7-4b69-95de-23448af3fd66.jpg"
+                alt="Прогулка 3"
               />
             </div>
             <div className="social-item">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
+                src="https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/62a6dc87-40ee-4528-b0d2-93a8c6ef0cbd.jpg"
+                alt="Прогулка 4"
               />
             </div>
           </div>
@@ -197,9 +193,9 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">ПЁСИЙ*ПАТРУЛЬ</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Профессиональный выгул собак во Владивостоке. Каждый пёс — наш лучший друг.
           </p>
         </div>
         <div className="footer-links">
@@ -207,7 +203,7 @@ export default function Index() {
           <ul>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Меню
+                Услуги
               </a>
             </li>
             <li>
@@ -222,7 +218,7 @@ export default function Index() {
             </li>
             <li>
               <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+                Контакты
               </a>
             </li>
           </ul>
@@ -230,16 +226,30 @@ export default function Index() {
         <div className="footer-links">
           <h4>Часы работы</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>Пн–Пт: 7:00 – 21:00</li>
+            <li>Сб–Вс: 8:00 – 20:00</li>
+            <li style={{ marginTop: "10px", fontWeight: 800 }}>📍 Владивосток</li>
           </ul>
         </div>
-        <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+        <div className="footer-links">
+          <h4>Контакты</h4>
+          <ul>
+            <li>
+              <a href="tel:+79999999999" style={{ color: "inherit", textDecoration: "none" }}>
+                +7 (999) 999-99-99
+              </a>
+            </li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
+                Instagram
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </>
