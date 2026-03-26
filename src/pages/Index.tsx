@@ -1,3 +1,20 @@
+const Paw = ({ size = 80, rotate = 0, style = {} }: { size?: number; rotate?: number; style?: React.CSSProperties }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    width={size}
+    height={size}
+    style={{ transform: `rotate(${rotate}deg)`, ...style }}
+    fill="#1a1a1a"
+  >
+    <ellipse cx="22" cy="18" rx="10" ry="12" />
+    <ellipse cx="44" cy="10" rx="9" ry="11" />
+    <ellipse cx="65" cy="13" rx="9" ry="11" />
+    <ellipse cx="80" cy="28" rx="9" ry="11" />
+    <path d="M50 40 C25 38 15 55 20 72 C25 88 40 95 50 95 C60 95 75 88 80 72 C85 55 75 38 50 40Z" />
+  </svg>
+);
+
 export default function Index() {
   return (
     <>
@@ -15,7 +32,13 @@ export default function Index() {
       </header>
 
       <main>
-        <section className="hero">
+        <section className="hero" style={{ position: "relative" }}>
+          {/* Лапки в углу hero-секции */}
+          <div style={{ position: "absolute", top: 20, right: 20, zIndex: 10, display: "flex", flexDirection: "column", gap: 4, opacity: 0.85 }}>
+            <Paw size={55} rotate={-20} />
+            <Paw size={55} rotate={10} style={{ marginLeft: 40 }} />
+            <Paw size={55} rotate={-15} style={{ marginLeft: 10 }} />
+          </div>
           <div className="hero-content">
             <h1 className="hero-title">
               ТВОЙ ПЁС
@@ -56,7 +79,13 @@ export default function Index() {
           </div>
         </div>
 
-        <section className="section-padding">
+        <section className="section-padding" style={{ position: "relative", overflow: "hidden" }}>
+          {/* Лапки слева от заголовка услуг */}
+          <div style={{ position: "absolute", left: -10, top: 30, opacity: 0.9, display: "flex", flexDirection: "column", gap: 6 }}>
+            <Paw size={60} rotate={40} />
+            <Paw size={60} rotate={20} style={{ marginLeft: 35 }} />
+            <Paw size={60} rotate={40} />
+          </div>
           <div className="section-header">
             <h2 className="section-title">НАШИ УСЛУГИ</h2>
             <a
@@ -158,7 +187,13 @@ export default function Index() {
           <div className="vibe-img" style={{ backgroundImage: `url("https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/files/30ff2eb0-43b7-4b69-95de-23448af3fd66.jpg")`, backgroundSize: "cover", backgroundPosition: "center" }}></div>
         </section>
 
-        <section className="section-padding">
+        <section className="section-padding" style={{ position: "relative", overflow: "hidden" }}>
+          {/* Лапки справа в фото-секции */}
+          <div style={{ position: "absolute", right: -5, bottom: 20, opacity: 0.9, display: "flex", flexDirection: "column", gap: 6 }}>
+            <Paw size={65} rotate={-30} style={{ marginLeft: 30 }} />
+            <Paw size={65} rotate={-10} />
+            <Paw size={65} rotate={-25} style={{ marginLeft: 40 }} />
+          </div>
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
             @PESIY.PATROL
           </h2>
