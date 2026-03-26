@@ -1,20 +1,12 @@
-const Paw = ({ size = 80, rotate = 0, style = {} }: { size?: number; rotate?: number; style?: React.CSSProperties }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 100 120"
+const PAW_URL = "https://cdn.poehali.dev/projects/ba6c3adb-5279-47e2-9dc6-23781698b8fa/bucket/c8b55409-d44b-40cb-b10e-2a24f92272b6.jpg";
+
+const Paw = ({ size = 120, rotate = 0, style = {} }: { size?: number; rotate?: number; style?: React.CSSProperties }) => (
+  <img
+    src={PAW_URL}
     width={size}
-    height={size}
-    style={{ transform: `rotate(${rotate}deg)`, ...style }}
-    fill="#1a1a1a"
-  >
-    {/* Большая подушечка */}
-    <ellipse cx="50" cy="85" rx="22" ry="18" />
-    {/* Маленькие подушечки-пальцы */}
-    <ellipse cx="22" cy="52" rx="10" ry="13" transform="rotate(-15 22 52)" />
-    <ellipse cx="40" cy="38" rx="10" ry="13" transform="rotate(-5 40 38)" />
-    <ellipse cx="60" cy="38" rx="10" ry="13" transform="rotate(5 60 38)" />
-    <ellipse cx="78" cy="52" rx="10" ry="13" transform="rotate(15 78 52)" />
-  </svg>
+    alt=""
+    style={{ transform: `rotate(${rotate}deg)`, display: "block", ...style }}
+  />
 );
 
 export default function Index() {
